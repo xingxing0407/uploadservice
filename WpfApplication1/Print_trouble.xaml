@@ -1,0 +1,638 @@
+﻿<Window x:Class="WpfApplication1.Print_trouble"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ext="clr-namespace:WpfApplication1"
+        
+        Title="打印1" Height="1202.012" Width="817.241">
+    <Window.Resources>
+        <Style x:Key="TextBlockStyle1" TargetType="{x:Type TextBlock}">
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="TextWrapping" Value="Wrap"></Setter>
+            <Setter Property="MaxWidth" Value="400"></Setter>
+
+        </Style>
+
+    </Window.Resources>
+    <Grid Height="29.7cm" Width="20.5cm" Name="p1">
+        <Grid  Margin="0 10 0 0" >
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="30"/>
+                <RowDefinition  Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="70"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock  Grid.Row="0" Grid.ColumnSpan="8"  Style="{DynamicResource TextBlockStyle1}" Text="中医药健康管理服务记录表" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold">
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Grid.Column="0" Margin="5 0 0 0"  Style="{DynamicResource TextBlockStyle1}" Text="病历号：" >
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Name="d_blh" Grid.Column="1" Margin="5 0 0 0" Text="" >
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Grid.Column="2" Margin="5 0 0 0"  Style="{DynamicResource TextBlockStyle1}" Text="姓名：" >
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Name="d_name" Grid.Column="3" Margin="5 0 0 0"   Text="" >
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Grid.Column="4" Margin="5 0 0 0"  Style="{DynamicResource TextBlockStyle1}" Text="年龄：" >
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Name="d_age" Grid.Column="5" Margin="5 0 0 0"   Text="" >
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Grid.Column="6" Margin="5 0 0 0"  Style="{DynamicResource TextBlockStyle1}" Text="性别：" >
+            </TextBlock>
+            <TextBlock  Grid.Row="1" Name="d_sex" Grid.Column="7" Margin="5 0 0 0"   Text="" >
+            </TextBlock>
+        </Grid>
+        <Grid Margin="0 70 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="339"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="0" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text=" 请根据近一年的体验和感觉，回答以下问题。" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="1">
+                <TextBlock Width="80"  Name="pd1"  Style="{DynamicResource TextBlockStyle1}"  Text="没有(根本不/从来没有)" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="12" VerticalAlignment="Center"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="2">
+                <TextBlock Width="80"  Name="pd2"   Style="{DynamicResource TextBlockStyle1}"  Text="很少(有一点/偶尔)" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="12" VerticalAlignment="Center"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="3">
+                <TextBlock Width="80"  Name="pd3"   Style="{DynamicResource TextBlockStyle1}"  Text="有时(有些/少数时间)" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="12" VerticalAlignment="Center"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="pd4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="经常(相当/多数时间)" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="12" VerticalAlignment="Center"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="pd5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="总是(非常/每天)" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="12" VerticalAlignment="Center"/>
+            </Border>
+        </Grid>
+
+        <Grid   UseLayoutRounding="False" Margin="0 110 0 0" >
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="40"/>
+                <RowDefinition  Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="339"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="85"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="0" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(1)您容易过敏(对药物、食物、气味、花粉或在季节交替、气候变化时)吗?">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="1">
+                <TextBlock Width="80"  Name="p1_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="2">
+                <TextBlock Width="80"  Name="p1_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="3">
+                <TextBlock Width="80"  Name="p1_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20"  VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p1_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="0" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p1_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20"  VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="1" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(2)您容易疲乏吗？（指体力如何，是否稍微活动一下或做一点家务劳动就感到累）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Grid.Column="1">
+                <TextBlock Width="80"  Name="p2_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Grid.Column="2">
+                <TextBlock Width="80"  Name="p2_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Grid.Column="3">
+                <TextBlock Width="80"  Name="p2_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p2_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="1" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p2_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="2" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(3)您容易气短，呼吸短促，接不上气吗？">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2" Grid.Column="1">
+                <TextBlock Width="80"  Name="p3_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2" Grid.Column="2">
+                <TextBlock Width="80"  Name="p3_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2" Grid.Column="3">
+                <TextBlock Width="80"  Name="p3_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p3_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="2" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p3_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="3" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(4)您说话声音低弱无力吗?（指说话没有力气）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3" Grid.Column="1">
+                <TextBlock Width="80"  Name="p4_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3" Grid.Column="2">
+                <TextBlock Width="80"  Name="p4_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3" Grid.Column="3">
+                <TextBlock Width="80"  Name="p4_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p4_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="3" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p4_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="4" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(5)您感到闷闷不乐、情绪低沉吗?（指心情不愉快，情绪低落）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4" Grid.Column="1">
+                <TextBlock Width="80"  Name="p5_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4" Grid.Column="2">
+                <TextBlock Width="80"  Name="p5_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4" Grid.Column="3">
+                <TextBlock Width="80"  Name="p5_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p5_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="4" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p5_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="5" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(6)您容易精神紧张、焦虑不安吗?（指遇事是否心情紧张）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5" Grid.Column="1">
+                <TextBlock Width="80"  Name="p6_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5" Grid.Column="2">
+                <TextBlock Width="80"  Name="p6_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden" />
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5" Grid.Column="3">
+                <TextBlock Width="80"  Name="p6_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p6_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="5" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p6_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="6" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(7)您因为生活状态改变而感到孤独、失落吗？">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6" Grid.Column="1">
+                <TextBlock Width="80"  Name="p7_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6" Grid.Column="2">
+                <TextBlock Width="80"  Name="p7_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6" Grid.Column="3">
+                <TextBlock Width="80"  Name="p7_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p7_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="6" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p7_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="7" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(8)您容易感到害怕或受到惊吓吗?">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="7" Grid.Column="1">
+                <TextBlock Width="80"  Name="p8_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="7" Grid.Column="2">
+                <TextBlock Width="80"  Name="p8_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="7" Grid.Column="3">
+                <TextBlock Width="80"  Name="p8_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="7" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p8_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="7" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p8_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="8" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(9)您感到身体超重不轻松吗?(感觉身体沉重)
+[BMI指数=体重（kg）/身高2（m）]">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="8" Grid.Column="1">
+                <TextBlock Width="80"  Name="p9_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="8" Grid.Column="2">
+                <TextBlock Width="80"  Name="p9_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="8" Grid.Column="3">
+                <TextBlock Width="80"  Name="p9_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="8" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p9_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="8" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p9_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="9" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(10)您眼睛干涩吗?">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="9" Grid.Column="1">
+                <TextBlock Width="80"  Name="p10_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="9" Grid.Column="2">
+                <TextBlock Width="80"  Name="p10_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="9" Grid.Column="3">
+                <TextBlock Width="80"  Name="p10_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="9" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p10_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="9" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p10_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="10" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(11)您手脚发凉吗?（不包含因周围温度低或穿的少导致的手脚发冷）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="10" Grid.Column="1">
+                <TextBlock Width="80"  Name="p11_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="10" Grid.Column="2">
+                <TextBlock Width="80"  Name="p11_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="10" Grid.Column="3">
+                <TextBlock Width="80"  Name="p11_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="10" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p11_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="10" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p11_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="11" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(12)您胃脘部、背部或腰膝部怕冷吗？（指上腹部、背部、腰部或膝关节等，有一处或多处怕冷）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="11" Grid.Column="1">
+                <TextBlock Width="80"  Name="p12_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="11" Grid.Column="2">
+                <TextBlock Width="80"  Name="p12_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="11" Grid.Column="3">
+                <TextBlock Width="80"  Name="p12_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="11" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p12_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="11" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p12_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="12" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(13)您比一般人耐受不了寒冷吗？（指比别人容易害怕冬天或是夏天的冷空调、电扇等）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="12" Grid.Column="1">
+                <TextBlock Width="80"  Name="p13_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="12" Grid.Column="2">
+                <TextBlock Width="80"  Name="p13_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="12" Grid.Column="3">
+                <TextBlock Width="80"  Name="p13_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="12" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p13_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="12" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p13_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="13" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(14)您容易患感冒吗?（指每年感冒的次数）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="13" Grid.Column="1">
+                <TextBlock Width="80"  Name="p14_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="13" Grid.Column="2">
+                <TextBlock Width="80"  Name="p14_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="13" Grid.Column="3">
+                <TextBlock Width="80"  Name="p14_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="13" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p14_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="13" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p14_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="14" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(15)您没有感冒时也会鼻塞、流鼻涕吗?">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="14" Grid.Column="1">
+                <TextBlock Width="80"  Name="p15_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="14" Grid.Column="2">
+                <TextBlock Width="80"  Name="p15_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="14" Grid.Column="3">
+                <TextBlock Width="80"  Name="p15_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="14" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p15_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="14" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p15_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="15" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(16)您有口粘口腻，或睡眠打鼾吗？">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="15" Grid.Column="1">
+                <TextBlock Width="80"  Name="p16_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="15" Grid.Column="2">
+                <TextBlock Width="80"  Name="p16_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="15" Grid.Column="3">
+                <TextBlock Width="80"  Name="p16_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="15" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p16_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="15" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p16_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="16" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(17)您容易过敏(对药物、食物、气味、花粉或在季节交替、气候变化时)吗?">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="16" Grid.Column="1">
+                <TextBlock Width="80"  Name="p17_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="16" Grid.Column="2">
+                <TextBlock Width="80"  Name="p17_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="16" Grid.Column="3">
+                <TextBlock Width="80"  Name="p17_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="16" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p17_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="16" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p17_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="17" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(18)您的皮肤容易起荨麻疹吗? (包括风团、风疹块、风疙瘩)">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="17" Grid.Column="1">
+                <TextBlock Width="80"  Name="p18_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="17" Grid.Column="2">
+                <TextBlock Width="80"  Name="p18_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="17" Grid.Column="3">
+                <TextBlock Width="80"  Name="p18_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="17" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p18_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="17" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p18_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="18" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(19)您的皮肤在不知不觉中会出现青紫瘀斑、皮下出血吗?（指皮肤在没有外伤的情况下出现青一块紫一块）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="18" Grid.Column="1">
+                <TextBlock Width="80"  Name="p19_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="18" Grid.Column="2">
+                <TextBlock Width="80"  Name="p19_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="18" Grid.Column="3">
+                <TextBlock Width="80"  Name="p19_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="18" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p19_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="18" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p19_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="19" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(20)您的皮肤一抓就红，并出现抓痕吗?（指被指甲或钝物划过后皮肤的反应）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="19" Grid.Column="1">
+                <TextBlock Width="80"  Name="p20_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="19" Grid.Column="2">
+                <TextBlock Width="80"  Name="p20_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="19" Grid.Column="3">
+                <TextBlock Width="80"  Name="p20_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="19" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p20_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="19" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p20_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="20" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(21)您皮肤或口唇干吗?">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="20" Grid.Column="1">
+                <TextBlock Width="80"  Name="p21_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="20" Grid.Column="2">
+                <TextBlock Width="80"  Name="p21_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="20" Grid.Column="3">
+                <TextBlock Width="80"  Name="p21_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="20" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p21_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="20" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p21_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="21" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(22)您有肢体麻木或固定部位疼痛的感觉吗？">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="21" Grid.Column="1">
+                <TextBlock Width="80"  Name="p22_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="21" Grid.Column="2">
+                <TextBlock Width="80"  Name="p22_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="21" Grid.Column="3">
+                <TextBlock Width="80"  Name="p22_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="21" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p22_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="21" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p22_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="22" >
+                <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(23)您面部或鼻部有油腻感或者油亮发光吗?（指脸上或鼻子）">
+                </TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="22" Grid.Column="1">
+                <TextBlock Width="80"  Name="p23_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="22" Grid.Column="2">
+                <TextBlock Width="80"  Name="p23_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="22" Grid.Column="3">
+                <TextBlock Width="80"  Name="p23_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="22" Grid.Column="4">
+                <TextBlock Width="80" Grid.Column="4" Name="p23_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Row="22" Grid.Column="5">
+                <TextBlock Width="80" Grid.Column="5" Name="p23_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+            </Border>
+            <!--<Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="23" >
+                    <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(24)您面色或目眶晦黯，或出现褐色斑块/斑点吗?">
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="23" Grid.Column="1">
+                    <TextBlock Width="80"  Name="p24_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"></TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="23" Grid.Column="2">
+                    <TextBlock Width="80"  Name="p24_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="23" Grid.Column="3">
+                    <TextBlock Width="80"  Name="p24_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center" Visibility="Hidden"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="23" Grid.Column="4">
+                    <TextBlock Width="80" Grid.Column="4" Name="p24_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="23" Grid.Column="5">
+                    <TextBlock Width="80" Grid.Column="5" Name="p24_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="24" >
+                    <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(25)您有皮肤湿疹、疮疖吗？">
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="24" Grid.Column="1">
+                    <TextBlock Width="80"  Name="p25_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="24" Grid.Column="2">
+                    <TextBlock Width="80"  Name="p25_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="24" Grid.Column="3">
+                    <TextBlock Width="80"  Name="p25_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="24" Grid.Column="4">
+                    <TextBlock Width="80" Grid.Column="4" Name="p25_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="24" Grid.Column="5">
+                    <TextBlock Width="80" Grid.Column="5" Name="p25_5" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>-->
+            <!--<Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="25" >
+                    <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(26)您感到口干咽燥、总想喝水吗？">
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="25" Grid.Column="1">
+                    <TextBlock Width="80"  Name="p26_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="25" Grid.Column="2">
+                    <TextBlock Width="80"  Name="p26_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="25" Grid.Column="3">
+                    <TextBlock Width="80"  Name="p26_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="25" Grid.Column="4">
+                    <TextBlock Width="80" Grid.Column="4" Name="p26_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="26" >
+                    <TextBlock  Width="340"  Style="{DynamicResource TextBlockStyle1}" Text="(27)您感到口苦或嘴里有异味吗?（指口苦或口臭）">
+                    </TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="26" Grid.Column="1">
+                    <TextBlock Width="80"  Name="p27_1"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="26" Grid.Column="2">
+                    <TextBlock Width="80"  Name="p27_2"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="26" Grid.Column="3">
+                    <TextBlock Width="80"  Name="p27_3"   Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" Grid.Row="26" Grid.Column="4">
+                    <TextBlock Width="80" Grid.Column="4" Name="p27_4" Grid.Row="0"  Style="{DynamicResource TextBlockStyle1}"  Text="√" HorizontalAlignment="Stretch" FontWeight="Bold" FontStyle="Italic" FontSize="20" VerticalAlignment="Center"/>
+                </Border>-->
+
+        </Grid>
+
+    </Grid>
+</Window>

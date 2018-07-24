@@ -1,0 +1,185 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" 
+        Height="768" Width="1024" 
+          WindowStyle="None" AllowsTransparency="True"  Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="mainwindow_closed">
+    <Window.Resources>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent" Margin="0,0,0,0" >
+                            <Image Name="ImgBtnBg3" Height="286" Width="119" Margin="0,0,0,0" Source="ReSource\档案录入2.png" Stretch="Fill"/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <!--<Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="/Resources/Res/Geng_II.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="ReSource\档案录入1.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>
+                            <!--<Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Source" Value="/Resources/Res/Delete_I.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent" Margin="0,0,0,0" >
+                            <Image Name="ImgBtnBg3" Height="286" Width="119" Margin="0,0,0,0" Source="ReSource\档案查询2.png" Stretch="Fill"/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <!--<Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="/Resources/Res/Geng_II.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="ReSource\档案查询1.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>
+                            <!--<Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Source" Value="/Resources/Res/Delete_I.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonStyle3" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent" Margin="0,0,0,0" >
+                            <Image Name="ImgBtnBg3" Height="286" Width="119" Margin="0,0,0,0" Source="ReSource\退出系统2.png" Stretch="Fill"/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <!--<Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="/Resources/Res/Geng_II.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="ReSource\退出系统1.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>
+                            <!--<Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Source" Value="/Resources/Res/Delete_I.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyle4" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent" Margin="0,0,0,0" >
+                            <Image Name="ImgBtnBg3" Height="286" Width="119" Margin="0,0,0,0" Source="ReSource\系统设置.png" Stretch="Fill"/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <!--<Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="/Resources/Res/Geng_II.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="ReSource\系统设置2.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>
+                            <!--<Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Source" Value="/Resources/Res/Delete_I.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ButtonStyleBaoCun" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <StackPanel Orientation="Horizontal" Background="Transparent" Margin="0,0,0,0" >
+                            <Image Name="ImgBtnBg3" Margin="0,0,0,0" Source="ReSource\登录1.png" Stretch="Fill"/>
+                        </StackPanel>
+                        <ControlTemplate.Triggers>
+                            <!--<Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Source" Value="/Resources/Res/Geng_II.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Source" Value="ReSource\登录2.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>
+                            <!--<Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Source" Value="/Resources/Res/Delete_I.png" TargetName="ImgBtnBg3"/>
+                            </Trigger>-->
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!--<Image Source="ReSource\开机界面3.png" Stretch="Fill"/>-->
+        <Grid.Background>
+            <ImageBrush ImageSource="ReSource\修改4.jpg" Stretch="Fill"></ImageBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Foreground="#FF60a09e" Width="180" Height="30" Name="Label1" Margin="58,270,0,0" FontSize="15"></Label>
+
+        <WrapPanel Grid.Row="1"  Name="wrps" Visibility="Hidden">
+            <Button  HorizontalAlignment="Center"  Click="bt_UserInforInterClick" Content="信息录入" Style="{DynamicResource ButtonStyle1}"></Button>
+            <Button  FontSize="25" Name="Sel_btn"  HorizontalAlignment="Center"  Style="{DynamicResource ButtonStyle2}" Click="bt_UserInforShow"></Button>
+            <Button Height="286" Width="119" HorizontalAlignment="Center" FontSize="25"   Style="{DynamicResource ButtonStyle4}" Click="Button_Click_2"></Button>
+            <Button  HorizontalAlignment="Center" FontSize="25"  Click="Button_Click" Style="{DynamicResource ButtonStyle3}"></Button>
+            <TextBox x:Name="tb_MedicalNo11" FontSize="25" VerticalAlignment="Center" Foreground="#FF1c6b6b" Margin="5,0,0,0" Width="220" MaxLength="18" Visibility="Hidden" ></TextBox>
+        </WrapPanel>
+        <StackPanel Grid.Row="1"  Name="wrps1" >
+            <WrapPanel >
+                <Label FontSize="30" Foreground="#FF1c6b6b" Margin="0,0,0,0" FontWeight="Black" >用户名:</Label>
+                <ComboBox Height="30" HorizontalAlignment="Center" Margin="5,0,0,0" Foreground="#FF1c6b6b"  Name="tb_MedicalNo" VerticalAlignment="Center" Width="220" FontSize="18" SelectedIndex="0">
+                    <ComboBoxItem Content="--请选择--" Background="#FFF9F4F4"  />
+                    <ComboBoxItem Content="admin" Background="#FFF9F4F4" />
+                    <ComboBoxItem Content="guest" Background="#FFF9F4F4" />
+                </ComboBox>
+            </WrapPanel>
+            <WrapPanel >
+                <Label FontSize="30" Foreground="#FF1c6b6b" Margin="0,0,0,0" FontWeight="Black" Content="密   码:"/>
+                <PasswordBox KeyDown="tb_MedicalNo1_KeyDown"  x:Name="tb_MedicalNo1" FontSize="25" VerticalAlignment="Center" Foreground="#FF1c6b6b" Margin="7,0,0,0" Width="220" MaxLength="18" PasswordChar="*">
+                    <PasswordBox.Style>
+                        <Style TargetType="{x:Type PasswordBox}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type PasswordBox}">
+                                        <Border Background="White" BorderBrush="#FF1c6b6b" BorderThickness="0.5">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <ScrollViewer x:Name="PART_ContentHost"/>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </PasswordBox.Style>
+                </PasswordBox>
+                <Button Name="Open" Grid.Column="1" Width="35" Height="30"  Cursor="Hand" Click="cb_PassWd">
+                    <Image Source="/ReSource/Keyboard.png"></Image>
+                </Button>
+            </WrapPanel>
+            <WrapPanel >
+                <Label FontSize="20" Name="TS_label" Foreground="Red" Margin="0,0,0,0" FontWeight="Black" Content="用户名密码不正确！" Visibility="Hidden"/>
+                <Button FontSize="25" Height="60" Width="120" Margin="20,0,0,0" HorizontalAlignment="Right"  Style="{DynamicResource ButtonStyleBaoCun}" Click="Button_Click_1"></Button>
+            </WrapPanel>
+        </StackPanel>
+       
+    </Grid>
+
+
+</Window>

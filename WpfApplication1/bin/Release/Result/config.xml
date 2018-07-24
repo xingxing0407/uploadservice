@@ -1,0 +1,11 @@
+<items>
+  <bbh>V1.4</bbh>
+  <szdy>1</szdy>
+  <gsmc>北京东华原医疗设备有限责任公司</gsmc>
+  <!--站点-->
+  <StaNumb>1</StaNumb>
+  <!--设备序列号-->
+  <DevNumb>CD11020170428</DevNumb>
+  <!--上传地址-->
+  <UpdataUrl>http://apphut.dhydata.cn/singledevup</UpdataUrl>
+</items>

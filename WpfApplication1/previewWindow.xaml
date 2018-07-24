@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfApplication1.PrintPreviewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="打印窗口" Height="500" Width="900" TextOptions.TextFormattingMode="Display" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DocumentViewer Name="docViewer"></DocumentViewer>
+    </Grid>
+</Window>
+

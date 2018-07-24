@@ -1,0 +1,14 @@
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\bin\x86\Debug\upload.exe
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\bin\x86\Debug\upload.pdb
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\bin\x86\Debug\MySql.Data.dll
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\bin\x86\Debug\System.Data.SQLite.DLL
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\bin\x86\Debug\System.Data.SQLite.xml
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\MainWindow.baml
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\MainWindow.g.cs
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\App.g.cs
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\upload_MarkupCompile.cache
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\upload.g.resources
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\upload.Properties.Resources.resources
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\upload.csproj.GenerateResource.Cache
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\upload.exe
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\upload\obj\x86\Debug\upload.pdb

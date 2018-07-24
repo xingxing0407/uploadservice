@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ZYdatabaseModel.Store" Alias="Self" Provider="System.Data.SQLite" ProviderManifestToken="ISO8601" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ZYdatabaseModelStoreContainer">
+          <EntitySet Name="UserInformation" EntityType="ZYdatabaseModel.Store.UserInformation" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="UserInformation">
+          <Key>
+            <PropertyRef Name="MedicalNo" />
+          </Key>
+          <Property Name="MedicalNo" Type="nvarchar" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sex" Type="nvarchar" MaxLength="10" />
+          <Property Name="Age" Type="integer" />
+          <Property Name="Married" Type="nvarchar" MaxLength="10" />
+          <Property Name="Nation" Type="nvarchar" MaxLength="50" />
+          <Property Name="NativePlace" Type="nvarchar" MaxLength="20" />
+          <Property Name="Occupation" Type="nvarchar" MaxLength="40" />
+          <Property Name="WorkUnit" Type="nvarchar" MaxLength="70" />
+          <Property Name="Telephone" Type="integer" />
+          <Property Name="Address" Type="nvarchar" MaxLength="70" />
+          <Property Name="PhysicalDate" Type="datetime" />
+          <Property Name="YangXu" Type="nvarchar" MaxLength="10" />
+          <Property Name="YinXu" Type="nvarchar" MaxLength="10" />
+          <Property Name="QiXu" Type="nvarchar" MaxLength="10" />
+          <Property Name="TanShi" Type="nvarchar" MaxLength="10" />
+          <Property Name="ShiRe" Type="nvarchar" MaxLength="10" />
+          <Property Name="XueYu" Type="nvarchar" MaxLength="10" />
+          <Property Name="TeBing" Type="nvarchar" MaxLength="10" />
+          <Property Name="QiYu" Type="nvarchar" MaxLength="10" />
+          <Property Name="PingHe" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ZYdatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ZYdatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UserInformations" EntityType="ZYdatabaseModel.UserInformation" />
+        </EntityContainer>
+        <EntityType Name="UserInformation">
+          <Key>
+            <PropertyRef Name="MedicalNo" />
+          </Key>
+          <Property Name="MedicalNo" Type="String" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sex" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Age" Type="Int64" />
+          <Property Name="Married" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Nation" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="NativePlace" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="Occupation" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="WorkUnit" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="Telephone" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="PhysicalDate" Type="DateTime" />
+          <Property Type="String" Name="YangXu" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="YinXu" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="QiXu" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TanShi" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ShiRe" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="XueYu" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TeBing" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="QiYu" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PingHe" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ZYdatabaseModelStoreContainer" CdmEntityContainer="ZYdatabaseEntities">
+          <EntitySetMapping Name="UserInformations">
+            <EntityTypeMapping TypeName="ZYdatabaseModel.UserInformation">
+              <MappingFragment StoreEntitySet="UserInformation">
+                <ScalarProperty Name="PingHe" ColumnName="PingHe" />
+                <ScalarProperty Name="QiYu" ColumnName="QiYu" />
+                <ScalarProperty Name="TeBing" ColumnName="TeBing" />
+                <ScalarProperty Name="XueYu" ColumnName="XueYu" />
+                <ScalarProperty Name="ShiRe" ColumnName="ShiRe" />
+                <ScalarProperty Name="TanShi" ColumnName="TanShi" />
+                <ScalarProperty Name="QiXu" ColumnName="QiXu" />
+                <ScalarProperty Name="YinXu" ColumnName="YinXu" />
+                <ScalarProperty Name="YangXu" ColumnName="YangXu" />
+                <ScalarProperty Name="MedicalNo" ColumnName="MedicalNo" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Married" ColumnName="Married" />
+                <ScalarProperty Name="Nation" ColumnName="Nation" />
+                <ScalarProperty Name="NativePlace" ColumnName="NativePlace" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="WorkUnit" ColumnName="WorkUnit" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="PhysicalDate" ColumnName="PhysicalDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1" ZoomLevel="32">
+        <EntityTypeShape EntityType="ZYdatabaseModel.UserInformation" Width="2.125" PointX="6.375" PointY="1.375" Height="5.02634765625" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

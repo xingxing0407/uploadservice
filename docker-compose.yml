@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  consoleapp2:
+    image: consoleapp2
+    build:
+      context: .\ConsoleApp2
+      dockerfile: Dockerfile

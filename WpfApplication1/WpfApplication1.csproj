@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{873FCBEE-595F-4154-804A-D033BF777E11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfApplication1</RootNamespace>
+    <AssemblyName>Print</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\WpfApplication1.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\WpfApplication1.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="KeyboardCtrl_V3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\KeyboardCtrl_V3.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\..\..\Oracle.ManagedDataAccess\Oracle.ManagedDataAccess\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="ScreenKeyboard">
+      <HintPath>bin\Release\ScreenKeyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="system.printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="DBhelp.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="GridHelper.cs" />
+    <Compile Include="MessageWindow1.xaml.cs">
+      <DependentUpon>MessageWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageWindow2.xaml.cs">
+      <DependentUpon>MessageWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageWindow3.xaml.cs">
+      <DependentUpon>MessageWindow3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model2.edmx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Print_trouble.xaml.cs">
+      <DependentUpon>Print_trouble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="UserInforShowPage.xaml.cs">
+      <DependentUpon>UserInforShowPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Print_trouble1.xaml.cs">
+      <DependentUpon>Print_trouble1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="H_Print_trouble.xaml.cs">
+      <DependentUpon>H_Print_trouble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="H_Print_trouble1.xaml.cs">
+      <DependentUpon>H_Print_trouble1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MessageWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessageWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessageWindow3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="previewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Print_trouble.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInforShowPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Print_trouble1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="H_Print_trouble.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="H_Print_trouble1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="previewWindow.xaml.cs">
+      <DependentUpon>previewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EntityDeploy Include="Model2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model2.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EntityDeploy>
+    <None Include="DB\ZYdatabase.sqlite" />
+    <None Include="Properties\DataSources\ZYdatabaseEntities.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\开机界面.png" />
+    <Resource Include="ReSource\档案录入1.png" />
+    <Resource Include="ReSource\档案录入2.png" />
+    <Resource Include="ReSource\档案查询1.png" />
+    <Resource Include="ReSource\档案查询2.png" />
+    <Resource Include="ReSource\退出系统1.png" />
+    <Resource Include="ReSource\退出系统2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\基本信息01.png" />
+    <Resource Include="ReSource\基本信息02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\诊断结果01.png" />
+    <Resource Include="ReSource\诊断结果02.png" />
+    <Resource Include="ReSource\诊断问卷01.png" />
+    <Resource Include="ReSource\诊断问卷02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\诊断问卷1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\返回1.png" />
+    <Resource Include="ReSource\返回2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\基本信息1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\保存1.png" />
+    <Resource Include="ReSource\保存2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\蓝点1.png" />
+    <Resource Include="ReSource\蓝点2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\上一页1.png" />
+    <Resource Include="ReSource\上一页2.png" />
+    <Resource Include="ReSource\下一页1.png" />
+    <Resource Include="ReSource\下一页2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\完成1.png" />
+    <Resource Include="ReSource\完成2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\查询选项1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\查询1.png" />
+    <Resource Include="ReSource\查询2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\删除1.png" />
+    <Resource Include="ReSource\删除2.png" />
+    <Resource Include="ReSource\打印1.png" />
+    <Resource Include="ReSource\打印2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\诊断结果1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\编辑1.png" />
+    <Resource Include="ReSource\编辑2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\否1.png" />
+    <Resource Include="ReSource\否2.png" />
+    <Resource Include="ReSource\提示框-背景.png" />
+    <Resource Include="ReSource\是1.png" />
+    <Resource Include="ReSource\是2.png" />
+    <Resource Include="ReSource\确定1.png" />
+    <Resource Include="ReSource\确定2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\提示框-背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\打印报告3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\小图标.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Visual Studio Add-in.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\信息录入1.png" />
+    <Resource Include="ReSource\信息录入2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\Keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\圆体，腰部肥大.png" />
+    <Resource Include="ReSource\圆体，腰部肥大1.png" />
+    <Resource Include="ReSource\寿公脸.png" />
+    <Resource Include="ReSource\寿公脸1.png" />
+    <Resource Include="ReSource\方砖脸.png" />
+    <Resource Include="ReSource\方砖脸1.png" />
+    <Resource Include="ReSource\枣核脸.png" />
+    <Resource Include="ReSource\枣核脸1.png" />
+    <Resource Include="ReSource\满月脸.png" />
+    <Resource Include="ReSource\满月脸1.png" />
+    <Resource Include="ReSource\瘦小体型.png" />
+    <Resource Include="ReSource\瘦小体型1.png" />
+    <Resource Include="ReSource\胖体型.png" />
+    <Resource Include="ReSource\胖体型1.png" />
+    <Resource Include="ReSource\身材矮小.png" />
+    <Resource Include="ReSource\身材矮小1.png" />
+    <Resource Include="ReSource\长躯干.png" />
+    <Resource Include="ReSource\长躯干1.png" />
+    <Resource Include="ReSource\鸭梨脸.png" />
+    <Resource Include="ReSource\鸭梨脸1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\打印报告4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\开机界面3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\红点1.png" />
+    <Resource Include="ReSource\红点2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\基本信息3.png" />
+    <Resource Include="ReSource\背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\圆体，腰部肥大2.png" />
+    <Resource Include="ReSource\瘦小体型2.png" />
+    <Resource Include="ReSource\胖体型2.png" />
+    <Resource Include="ReSource\身材矮小2.png" />
+    <Resource Include="ReSource\长躯干2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\预览1.png" />
+    <Resource Include="ReSource\预览2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\寿公脸3.png" />
+    <Resource Include="ReSource\方砖脸3.png" />
+    <Resource Include="ReSource\枣核脸3.png" />
+    <Resource Include="ReSource\满月脸3.png" />
+    <Resource Include="ReSource\鸭梨脸3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\寿公脸2.png" />
+    <Resource Include="ReSource\方砖脸2.png" />
+    <Resource Include="ReSource\枣核脸2.png" />
+    <Resource Include="ReSource\满月脸2.png" />
+    <Resource Include="ReSource\鸭梨脸2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\诊断结果3.png" />
+    <Resource Include="ReSource\诊断问卷4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\打印报告-国家基本公共卫生服务—中医药技术规范系统1.jpg" />
+    <Resource Include="ReSource\打印报告-国家基本公共卫生服务—中医药技术规范系统2.jpg" />
+    <Resource Include="ReSource\界面背景国家基本公共卫生服务—中医药技术规范系统2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\打印报告-柳煦汉方.jpg" />
+    <Resource Include="ReSource\界面背景柳煦汉方.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\QQ截图20150309095253.png" />
+    <Resource Include="ReSource\背景柳熙汉方修改2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\背景柳熙汉方修改1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\修改3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\修改4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\登录1.png" />
+    <Resource Include="ReSource\登录2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\退出1.png" />
+    <Resource Include="ReSource\退出2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\打印报告14630.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\系统设置.png" />
+    <Resource Include="ReSource\系统设置2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\资源 120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ReSource\扬声器.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

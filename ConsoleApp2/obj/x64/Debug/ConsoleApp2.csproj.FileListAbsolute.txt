@@ -1,0 +1,9 @@
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\x64\Debug\XMLWriter.exe.config
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\x64\Debug\XMLWriter.exe
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\x64\Debug\XMLWriter.pdb
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\x64\Debug\MySql.Data.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\x64\Debug\System.Data.SQLite.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\x64\Debug\ConsoleApp2.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\x64\Debug\XMLWriter.exe
+d:\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\x64\Debug\XMLWriter.pdb
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\ConsoleApp2\bin\x64\Debug\XMLWriter.exe.config

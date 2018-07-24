@@ -1,0 +1,33 @@
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\xmlwriterservice.exe.config
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\xmlwriterservice.exe
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\xmlwriterservice.pdb
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\System.Net.Http.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\System.Net.Http.xml
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.exe
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.pdb
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.ProjectInstaller.resources
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.csproj.GenerateResource.Cache
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\MySql.Data.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\SQLite.Designer.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\System.Data.SQLite.DLL
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\EnvDTE.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\stdole.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\Microsoft.MSXML.dll
+d:\documents\visual studio 2017\Projects\ConsoleApp2\xmlwriterservice\bin\Debug\SQLite.Designer.pdb
+D:\Documents\Visual Studio 2017\Projects\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.csprojResolveAssemblyReference.cache
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\xmlwriterservice.exe.config
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\xmlwriterservice.exe
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\xmlwriterservice.pdb
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\MySql.Data.dll
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\System.Data.SQLite.DLL
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\System.Net.Http.dll
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\System.Data.SQLite.xml
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\System.Net.Http.xml
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.csprojResolveAssemblyReference.cache
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.ProjectInstaller.resources
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.csproj.GenerateResource.Cache
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.exe
+E:\资料\中医体质辨识平台上传相关文档\ConsoleApp2\xmlwriterservice\obj\Debug\xmlwriterservice.pdb

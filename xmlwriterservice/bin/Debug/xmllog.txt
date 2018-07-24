@@ -1,0 +1,37 @@
+2018-01-22 14:14:57 服务启动成功。。。。。
+2018-01-22 14:15:12 服务停止。。。。。
+2018-01-22 14:15:32 服务启动成功。。。。。
+2018-01-22 14:16:32 开始生成xml文件
+2018-01-22 14:16:48 数据库打开失败Unable to connect to any of the specified MySQL hosts.
+2018-01-22 14:16:48 工作异常。。。。。Unable to open the database file
+2018-01-22 14:16:58 服务停止。。。。。
+2018-01-22 14:17:10 服务启动成功。。。。。
+2018-01-22 14:17:19 服务停止。。。。。
+2018-01-22 14:18:20 服务启动成功。。。。。
+2018-01-22 14:18:55 服务停止。。。。。
+2018-04-25 16:13:21 服务启动成功。。。。。
+2018-04-25 16:13:56 服务停止。。。。。
+2018-04-25 16:31:27 服务启动成功。。。。。
+2018-04-25 16:32:00 服务停止。。。。。
+2018-04-25 17:04:47 服务启动成功。。。。。
+2018-04-25 17:04:48 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:49 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:50 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:51 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:52 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:53 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:54 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:55 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:56 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:57 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:58 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:04:59 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:00 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:01 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:02 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:03 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:04 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:05 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:06 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:07 未能加载文件或程序集“System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139”或它的某一个依赖项。试图加载格式不正确的程序。
+2018-04-25 17:05:08 服务停止。。。。。

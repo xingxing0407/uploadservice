@@ -1,0 +1,50 @@
+2018-01-27 10:13:51 select ID,ARCHIVEID,FULLNAME,REPORTDATE,DUNS from EHR_Arch_OldHerb where 1 = 1  and FULLNAME = ''and DUNS = ''
+2018-01-27 10:15:57 select ID,ARCHIVEID,FULLNAME,REPORTDATE,DUNS from EHR_Arch_OldHerb where 1 = 1  and FULLNAME = ''and DUNS = ''
+2018-01-27 10:17:00 select ID,ARCHIVEID,FULLNAME,REPORTDATE,DUNS from EHR_Arch_OldHerb where 1 = 1 
+2018-01-27 10:22:49 select ID,ARCHIVEID,FULLNAME,REPORTDATE,DUNS from EHR_Arch_OldHerb where 1 = 1 
+2018-01-27 10:23:29 select * from EHR_Arch_OldHerb
+2018-01-27 10:25:22 select * from EHR_Arch_OldHerb
+2018-01-27 10:26:55 select * from EHR_Arch_OldHerb
+2018-01-27 10:27:19 select * from EHR_Arch_OldHerb
+2018-01-27 10:39:20 select * from EHR_Arch_OldHerb
+2018-01-27 10:42:50 select * from EHR_Arch_OldHerb
+2018-01-27 10:46:46 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 10:50:02 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 10:55:44 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 10:56:30 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 10:57:52 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 10:58:22 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 11:00:17 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 11:11:56 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 11:12:09 select * from EHR_Arch_OldHerb where ARCHIVEID = '201605186110240000202'
+2018-01-27 11:13:25 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417'
+2018-01-27 11:13:32 select * from EHR_Arch_OldHerb where ID = '201605186110240000202'
+2018-01-27 11:13:32 201605186110240000202$612525195001181417$612525195001181417$$$苗留成$4$2$2$2$1$1$1$1$1$2$0$2$2$3$2$0$2$1$1$1$1$2$2
+2018-01-27 11:13:32 1$2$1$2$4$2$1$1$2$1$9$6$5$7$7$5$4$6$21
+2018-01-27 11:34:10 select * from EHR_Arch_OldHerb where ARCHIVEID = '612525195001181417' and ARCHIVEID = '612525195001181417'
+2018-01-27 11:34:13 select * from EHR_Arch_OldHerb where ID = '201605186110240000202'
+2018-01-27 11:34:13 201605186110240000202$612525195001181417$612525195001181417$$$苗留成$4$2$2$2$1$1$1$1$1$2$0$2$2$3$2$0$2$1$1$1$1$2$2
+2018-01-27 11:34:13 1$2$1$2$4$2$1$1$2$1$9$6$5$7$7$5$4$6$21
+2018-01-29 08:51:48 select * from EHR_Arch_OldHerb where 1 = 1 and DUNS = '611024436416736'
+2018-01-29 08:54:25 select * from EHR_Arch_OldHerb where 1 = 1  and ARCHIVEID = '612326194001151112'
+2018-01-29 08:55:16 select * from EHR_Arch_OldHerb where 1 = 1  and ARCHIVEID = '612525195001181417'
+2018-01-29 08:57:37 select * from EHR_Arch_OldHerb where 1 = 1  and ARCHIVEID = '612525195001181417'
+2018-01-29 08:57:41 select * from EHR_Arch_OldHerb where ID = '201605186110240000202'
+2018-01-29 09:00:06 select * from EHR_Arch_OldHerb where 1 = 1  and ARCHIVEID = '612525195001181417'
+2018-01-29 09:00:09 select * from EHR_Arch_OldHerb where ID = '201605186110240000202'
+2018-01-29 09:00:09 贾世贤
+2018-01-29 09:00:27 select * from EHR_Arch_OldHerb where ID = '201605186110240000202'
+2018-01-29 09:00:27 贾世贤
+2018-01-29 09:19:53 select * from EHR_Arch_OldHerb where 1 = 1  and FULLNAME = '郭根喜'
+2018-01-29 09:39:27 select * from EHR_Arch_OldHerb where 1 = 1  and FULLNAME = '杨振魁'
+2018-01-29 09:40:13 select * from EHR_Arch_OldHerb where 1 = 1 and DUNS = '611024436415231'
+2018-01-29 09:56:34 select * from EHR_Arch_OldHerb where 1 = 1 and DUNS = '611024PDY701342'
+2018-01-29 09:59:10 select * from EHR_Arch_OldHerb where 1 = 1 and DUNS = '611024PDY701342'
+2018-01-29 10:01:46 select * from EHR_Arch_OldHerb where 1 = 1 and DUNS = '611024PDY701342'
+2018-01-29 10:14:24 select * from EHR_Arch_OldHerb where 1 = 1  and FULLNAME = '庾爱娃'
+2018-01-29 10:15:43 select * from EHR_Arch_OldHerb where 1 = 1  and FULLNAME = '庾爱娃'
+2018-01-29 10:15:46 select * from EHR_Arch_OldHerb where ID = '201712106110240000372'
+2018-01-29 10:15:46 贾成林
+2018-01-29 10:18:03 select * from EHR_Arch_OldHerb where 1 = 1  and FULLNAME = '庾爱娃'
+2018-01-29 10:18:06 select * from EHR_Arch_OldHerb where ID = '201801206110240000068'
+2018-01-29 10:18:06 樵发虎
